@@ -1,7 +1,6 @@
 """
 This is a simple alexa translation skill, translating from English to Minonese (the
-language of the minions). It was created by Duncan Bailey and is no way affiliated with
-the Disney Corporation or any enitities of that business. This is Duncan Bailey's first alexa skill
+language of the minions). This is Duncan Bailey's first alexa skill
 and he used the sample What's my color skill to get started (Duncan Bailey was writing this in
 the third person).
 
@@ -101,7 +100,7 @@ def translate_to_minion_in_session(intent, session):
     """
     card_title = intent['name']
     session_attributes = {}
-    should_end_session = False
+    should_end_session = True
 
     if 'Words' in intent['slots']:
         word_to_translate = intent['slots']['Words']['value']
